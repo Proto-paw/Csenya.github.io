@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csenyia card</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .terminal {
+            background-color: #000;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .terminal-header {
+            background-color: #4d4d4d;
+            font-family: monospace;
+            padding: 5px 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            text-align: center;
+        }
+        .terminal-content {
+            color: rgb(0, 255, 26);
+            margin: 5px 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .terminal-content-div {
+            padding: 5px;
+        }
+        .colored-text-org {
+            color: rgb(255, 255, 255);
+        }
+        .colored-text-mgt {
+        color: rgb(255, 0, 0);
+        }
+        .colored-text-red {
+        color: red;
+        }
+        .profile-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .about {
+            text-decoration: none;
+            
+        }
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .button {
+            margin: 5px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 5px 10px;
+            background-color: #00000000;
+            color: #8a48f3;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #8a48f3;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            user-select: none;
+        }
+        .term-link {
+            text-decoration: none;
+            color: magenta;
+        }
+        .term-link:hover {
+            text-decoration: none;
+            color: magenta;
+            cursor: help;
+        }
+        .term-link:focus {
+            text-decoration: none;
+            color: darkmagenta;
+        }
+        .term-link-1 {
+            color: rgb(0, 255, 26);
+            text-decoration: none;
+        }
+        .term-link-1:hover {
+            text-decoration: none;
+            color: aquamarine;
+            cursor: help;
+        }
+        .term-link-1:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+        .button:hover {
+            color: #2a2a2a;
+            border-color: #8a48f3;
+            background-color: #8a48f3;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="about" href="https://youtu.be/dQw4w9WgXcQ?si=pWyyyZXNqI8UvjwG&t=42" target="_blank"><img class="profile-img" src="https://cdn.discordapp.com/avatars/1215278950465540216/c38a6fde1d99b03dd8513aacd302b9d2.webp?size=128&format=webp&width=50&height=50" alt="Profile Picture"></a>
+        <div class="name">Csenyia/Ксенька</div>
+        <div class="terminal">
+            <div class="terminal-header">Fluffy Terminal</div>
+            <div class="terminal-content-div">
+                <div class="terminal-content"><span class="colored-text-red">[root@me0w ~] $</span> fetch</div>
+                <div class="terminal-content"><span class="colored-text-org">Linux distribution: </span><span class="colored-text-mgt"><a class="term-link" href="https://www.debian.org/index.ru.html" target="_blank">Debian Linux</a></span></div>
+                <div class="terminal-content"><span class="colored-text-org">Shell: </span><a href="https://ohmyz.sh/" class="term-link-1" target="_blank">oh-my-zsh</a></div>
+                <div class="terminal-content"><span class="colored-text-org">DE: </span><a class="term-link-1" href="https://www.xfce.org/" target="_blank">XFCE4</a></div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a class="button" href="https://github.com/Proto-paw" target="_blank">GitHub</a>
+            <a class="button" href="https://t.me/Cotya_uwu" target="_blank">Telegram</a>
+            <a class="button" href="" target="_blank">In progress...</a>
+            <a class="button" onclick="copyText()">[Discord] (click to copy)</a>
+        </div>
+    </div>
+    <script>
+        function copyText() {
+            navigator.clipboard.writeText("@me0w.nya")
+                .then(function() {
+                    
+                })
+                .catch(function() {
+                    
+                });
+        }
+    </script>
+</body>
+</html>
